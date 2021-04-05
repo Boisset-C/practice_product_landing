@@ -1,26 +1,44 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+ <landing-homepage></landing-homepage>
+ <landing-analytics></landing-analytics>
+ <landing-benefits></landing-benefits>
+ <landing-collaborate></landing-collaborate>
+ <landing-features></landing-features>
+ <landing-integration></landing-integration>
+ <landing-pricing></landing-pricing>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LandingAnalytics from './pages/components/LandingAnalytics.vue';
+import LandingBenefits from './pages/components/LandingBenefits.vue';
+import LandingCollaborate from './pages/components/LandingCollaborate';
+import LandingFeatures from './pages/components/LandingFeatures.vue';
+import LandingHomepage from './pages/components/LandingHomepage.vue';
+import LandingIntegration from './pages/components/LandingIntegration.vue';
+import LandingPricing from './pages/components/LandingPricing'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    LandingAnalytics,
+    LandingBenefits,
+    LandingCollaborate,
+    LandingFeatures,
+    LandingHomepage,
+    LandingIntegration,
+    LandingPricing,
+
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display: grid;
+  grid-template: 6, 1fr;
+  width: 100vw;
+  
+ 
+ 
 }
 </style>
