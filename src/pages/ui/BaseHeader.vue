@@ -1,5 +1,5 @@
 <template>
-<section class="container">
+<section class="container-header">
   <div class="logo">
     <img :src="require(`@/assets/header-images/logo-image.png`)"/>
   </div>
@@ -17,7 +17,7 @@ export default {
 
 <style scoped>
 
-.container {
+.container-header {
   display: flex;
   justify-content: space-between;
   height: 50px;
